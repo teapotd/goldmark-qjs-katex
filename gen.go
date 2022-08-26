@@ -1,5 +1,5 @@
-// +build ignore
-// +build !windows
+//go:build ignore && !windows
+// +build ignore,!windows
 
 package main
 
@@ -80,7 +80,7 @@ var inputs = []string{
 	"$x$\n---",
 }
 
-var permutands = []string {
+var permutands = []string{
 	"$x\n$",
 	"$x\nx$",
 	"$x\n\n$",
@@ -110,7 +110,7 @@ func normalize(s string) string {
 
 func pandoc(s string) string {
 	var out bytes.Buffer
-	cmd := exec.Command("pandoc", "--katex", "--filter", "./katex/filter.js")
+	cmd := exec.Command("pandoc", "--katex", "--filter", "./katex/filter.js", "-f", "markdown-auto_identifiers-smart")
 	cmd.Stdin = strings.NewReader(s)
 	cmd.Stdout = &out
 	err := cmd.Run()
