@@ -1,0 +1,21 @@
+# Ignore quickjs build files
+katex/quickjs/.obj/
+katex/quickjs/examples/hello
+katex/quickjs/examples/hello_module
+katex/quickjs/examples/test_fib
+katex/quickjs/hello.c
+katex/quickjs/libquickjs.a
+katex/quickjs/libquickjs.bn.a
+katex/quickjs/libquickjs.bn.lto.a
+katex/quickjs/libquickjs.lto.a
+katex/quickjs/qjs
+katex/quickjs/qjsbn
+katex/quickjs/qjsbnc
+katex/quickjs/qjsc
+katex/quickjs/qjscalc
+katex/quickjs/qjscalc.c
+katex/quickjs/repl-bn.c
+katex/quickjs/repl.c
+katex/quickjs/run-test262
+katex/quickjs/run-test262-bn
+katex/quickjs/test_fib.c
